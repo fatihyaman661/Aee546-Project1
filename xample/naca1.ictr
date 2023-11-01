@@ -1,0 +1,54 @@
+% naca from .pts file
+VERBOS
+5
+OUTFIL
+newnaca.pts
+%
+SCREEN
+
+SCREEN
+---> airfoil
+NEWFIL
+naca.pts
+FILCRV
+1
+SPCCLR
+SPCING
+0. .008
+SPCING
+.075 .02
+SPCING
+.25 .02
+SPCING
+.425 .01
+SPCING
+.5 .005
+SPCING
+.575 .01
+SPCING
+.75 .02
+SPCING
+.925 .02
+SPCING
+1. .008
+MINRES
+4
+NEWPTS
+WRTPTS
+%
+%
+SCREEN
+
+SCREEN
+---> outer circle
+FILCRV
+2
+SPCCLR
+SPCING
+0. 1
+SPCING
+1. 1
+NEWPTS
+WRTPTS
+%
+ENDDAT
