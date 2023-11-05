@@ -628,7 +628,7 @@ C         Read the output file format.
           CharTxt(3) = '                      .out (vkb)   [o],'
           CharTxt(4) = '                      .ucd (AvS)   [u],'
           CharTxt(5) = '                      .dat (set2d) [s],'
-          CharTxt(6) = '                      .plt (plt)   [t],'
+          CharTxt(6) = '                      .plt (plt)   [p],'
           Answer = " "
           CALL READCHAR(NtCtrl,CharOpt,MCharOpt,CharTxt,MCharTxt,
      &                  FNoCtr,FNotReq,FDCharOutForm,Answer)

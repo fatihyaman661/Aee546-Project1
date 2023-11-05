@@ -492,7 +492,7 @@ C
       TimeWrite = DTIME(Tme)
 C     Grid seems to be valid.
       CLOSE (NtOpFl)
-      IF (CharOutForm.EQ.'d'.OR.CharOutForm.EQ.'t'.OR.CharOutForm.EQ.'u' 
+      IF (CharOutForm.EQ.'d'.OR.CharOutForm.EQ.'p'.OR.CharOutForm.EQ.'u' 
      >  .or.   CharOutForm.EQ.'s' ) THEN
 C       Use .DPL or .inp format.
         OPEN(NtOpFl,FILE=OpFlNm,STATUS='UNKNOWN',FORM='FORMATTED')
@@ -560,7 +560,7 @@ C         Plot the background grid in .dpl format.
 C
       ELSE IF (CharOutType.EQ.'t') THEN
 C       Triangulation.
-        IF (CharOutForm.EQ.'d') THEN
+        IF (CharOutForm.EQ.'d'.OR.CharOutForm.EQ.'p') THEN
 C         Write triangulation to .DPL file.
           CALL FLGOUT (LsOutVvr,FlsOutVv(1),MOutVvr,
      &                 MLmt,LmtNde,MBnd,NdxLBnNd,NmNghFNd,NmNghLNd,
@@ -637,7 +637,7 @@ C          CALL TRIANGLE (LsOutVvr,FlsOutVV,MOutVvr,NtOpFl,FOutFl)
 C
       ELSE IF (CharOutType.EQ.'q') THEN
 C       Quadratic triangulation.
-        IF (CharOutForm.EQ.'d') THEN
+        IF (CharOutForm.EQ.'d'.OR.CharOutForm.EQ.'p') THEN
           IF ( MNde .GE. MaxBndNde ) THEN
             WRITE (*,40) MaxBndNde
  40         FORMAT ( ' FATAL: Quadratic routines are compiled for',I7,
@@ -697,7 +697,12 @@ C     Goodbye.
      &     6X,F8.1,' sec to write the output, thus'/
      &     6X,F8.1,' sec in total.')
       IF (IVerbose.GE.2) THEN
-        WRITE (*,31) OpFlNm(1:KHiOpFlnm-1)
+
+         IF (CharOutForm.eq.'p') then
+            WRITE (*,31) OpFlNm(1:KHiOpFlnm-5)// '.plt'
+         else
+            WRITE (*,31) OpFlNm(1:KHiOpFlnm-1)
+         end if
         DO NLevel = 2,MLevel
           CharLevel = CHAR(NLevel+ICharZero)
           WRITE (*,34) OpFlNm(1:KHiOpFlnm-1)//'.'//CharLevel
@@ -705,7 +710,11 @@ C     Goodbye.
         WRITE (*,35)
       END IF
       IF (FLogFile) THEN
-        WRITE (NtLog,31) OpFlNm(1:KHiOpFlnm-1)
+         IF (CharOutForm.EQ.'p') then
+            WRITE (*,31) OpFlNm(1:KHiOpFlnm-5)// '.plt'
+         ELSE
+            WRITE (NtLog,31) OpFlNm(1:KHiOpFlnm-1)
+         ENDIF
         DO NLevel = 2,MLevel
           CharLevel = CHAR(NLevel+ICharZero)
           WRITE (NtLog,34) OpFlNm(1:KHiOpFlnm-1)//'.'//CharLevel
