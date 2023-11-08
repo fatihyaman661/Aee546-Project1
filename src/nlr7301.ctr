@@ -1,0 +1,43 @@
+ VERBOSe:
+       3, User.
+ ALLPARameters:
+       f, User.
+ INFILE:
+      newnlr.pts
+ INFORMatted:
+       T
+ NODEUSe:
+       F, User.
+ NODECOnstr.:
+       T, User.
+ ANTICOnnect.:
+       f, User.
+ SPCRATio:
+         0.50, User.
+ DTOLERance:
+       0.6000, User.
+ QTOLERance:
+       0.6500, User.
+ STRETChing:
+       t, User.
+ DELTAStar:
+       0.05, User.
+ MAXASPect ratio:
+        200., User.
+ ISMOOTh:
+         2 User
+ FLATSWap:
+       f, User.
+ ANGMAX:
+       133.
+ MCYCSWap:
+       20 User
+ OUTFORmat:
+       p
+ OUTFILe:
+       NLR7301_KY.plt
+ DOLOGFile:
+       T, User.
+ LOGFILe:
+       NLR7301.log
+

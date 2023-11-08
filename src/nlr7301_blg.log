@@ -1,0 +1,392 @@
+
+    This is Delaundo, version 5.4 of 02 April 1997,
+       Welcome to DOMINO Software.
+
+    The following parameters will be used:
+       VERBOSe:
+       3, User.
+       INFILE:
+       newnlr.pts 
+       NODEUSe:
+       F, User.
+       NODECOnstr.:
+       T, User.
+       ANTICOnnect.:
+       T, User.
+       SPCRATio:
+         0.50, User.
+       DTOLERance:
+       0.6000, User.
+       QTOLERance:
+       0.6500, User.
+       STRETChing:
+       T, User.
+       DELTAStar:
+       0.0100
+       MAXASPect ratio:
+         150.
+       MVISROw:
+        30000, Default.
+       ISMOOTh:
+         2 User
+       FLATSWap:
+       F, User.
+       OUTFILe:
+       nlr7301_blg.plt 
+       OUTTYPe:
+       p
+       DOLOGFile:
+       T, User.
+       LOGFILe:
+       nlr7301_blg.log 
+       ENDDAT: End of the list of control parameters.
+
+    Reading boundary nodes from .pts file.
+       Boundary  1 named  2 type  1 read with  878 vertices.
+          Connected to boundary named  2 at X,Y =  0.10000000E+01  0.14942770E-01
+          Connected to boundary named  2 at X,Y =  0.10000000E+01  0.14942770E-01
+          Minimum coarsegrid resolution:  4 vertices.
+       Boundary  2 named  3 type  1 read with  295 vertices.
+          Connected to boundary named  3 at X,Y =  0.12733930E+01 -0.11047450E+00
+          Connected to boundary named  3 at X,Y =  0.12733930E+01 -0.11047450E+00
+          Minimum coarsegrid resolution:  4 vertices.
+       Boundary  3 named  4 type  3 read with  261 vertices.
+          Connected to boundary named  4 at X,Y =  0.22058360E+01  0.20000000E+01
+          Connected to boundary named  4 at X,Y =  0.25000000E+01  0.20042780E+01
+       Boundary  4 named  1 type  2 read with  126 vertices.
+          Connected to boundary named  1 at X,Y =  0.10500000E+02  0.00000000E+00
+          Connected to boundary named  1 at X,Y =  0.10500000E+02  0.00000000E+00
+
+    Deriving the background mesh.
+       Maximum frontal and non-frontal scales:  0.3999828E-02  0.5196041E+00
+       Value for SpcPw:0.900
+       The inner edge of the viscous cells:
+           No.  wall dist.     cell thk.   loc. stretching
+          1     0.00000000     0.00000000        150.000
+          2     0.00002667     0.00002667        107.349
+          3     0.00009059     0.00006393         76.825
+          4     0.00020658     0.00011599         54.980
+          5     0.00039532     0.00018874         39.347
+          6     0.00068572     0.00029040         28.159
+          7     0.00111816     0.00043244         20.152
+          8     0.00174908     0.00063092         14.422
+          9     0.00265734     0.00090826         10.321
+         10     0.00395313     0.00129579          7.387
+         11     0.00579043     0.00183730          5.286
+         12     0.00838438     0.00259395          3.783
+         13     0.01203561     0.00365124          2.707
+         14     0.01716421     0.00512860          1.938
+         15     0.02435714     0.00719293          1.387
+          368 nodes, numbers   1560 through   1928
+       in the background grid to form a stretching layer.
+       Maximum(Average) Gradient in the background grid: 0.21945( 0.05608)
+       in cell    457.
+
+    Creating stretched triangles for viscous layers.
+          878 nodes around boundary named  2,row    1.
+          295 nodes around boundary named  3,row    2.
+          877 nodes around boundary named  2,row    3.
+          294 nodes around boundary named  3,row    4.
+          877 nodes around boundary named  2,row    5.
+          294 nodes around boundary named  3,row    6.
+          877 nodes around boundary named  2,row    7.
+          294 nodes around boundary named  3,row    8.
+          877 nodes around boundary named  2,row    9.
+          294 nodes around boundary named  3,row   10.
+          877 nodes around boundary named  2,row   11.
+          294 nodes around boundary named  3,row   12.
+          877 nodes around boundary named  2,row   13.
+          294 nodes around boundary named  3,row   14.
+          877 nodes around boundary named  2,row   15.
+          294 nodes around boundary named  3,row   16.
+          877 nodes around boundary named  2,row   17.
+          294 nodes around boundary named  3,row   18.
+          877 nodes around boundary named  2,row   19.
+          294 nodes around boundary named  3,row   20.
+          877 nodes around boundary named  2,row   21.
+          294 nodes around boundary named  3,row   22.
+          877 nodes around boundary named  2,row   23.
+          294 nodes around boundary named  3,row   24.
+          877 nodes around boundary named  2,row   25.
+          294 nodes around boundary named  3,row   26.
+          877 nodes around boundary named  2,row   27.
+          294 nodes around boundary named  3,row   28.
+          810 nodes around boundary named  2,row   29.
+          289 nodes around boundary named  3,row   30.
+          242 nodes around boundary named  2,row   31.
+          243 nodes around boundary named  2,row   32.
+           90 nodes around boundary named  3,row   33.
+           80 nodes around boundary named  3,row   35.
+
+    Constructing isotropic nodes:
+         1227 tried,    775 new,  20853 total nodes in    1. row.
+         1340 tried,    648 new,  21501 total nodes in    2. row.
+          732 tried,    629 new,  22130 total nodes in    3. row.
+          684 tried,    603 new,  22733 total nodes in    4. row.
+          644 tried,    576 new,  23309 total nodes in    5. row.
+          629 tried,    558 new,  23867 total nodes in    6. row.
+          611 tried,    524 new,  24391 total nodes in    7. row.
+          587 tried,    501 new,  24892 total nodes in    8. row.
+          565 tried,    466 new,  25358 total nodes in    9. row.
+          543 tried,    451 new,  25809 total nodes in   10. row.
+          536 tried,    439 new,  26248 total nodes in   11. row.
+          515 tried,    423 new,  26671 total nodes in   12. row.
+          501 tried,    409 new,  27080 total nodes in   13. row.
+          484 tried,    394 new,  27474 total nodes in   14. row.
+          477 tried,    381 new,  27855 total nodes in   15. row.
+          461 tried,    372 new,  28227 total nodes in   16. row.
+          444 tried,    363 new,  28590 total nodes in   17. row.
+          448 tried,    351 new,  28941 total nodes in   18. row.
+          431 tried,    335 new,  29276 total nodes in   19. row.
+          417 tried,    326 new,  29602 total nodes in   20. row.
+          404 tried,    311 new,  29913 total nodes in   21. row.
+          396 tried,    301 new,  30214 total nodes in   22. row.
+          385 tried,    293 new,  30507 total nodes in   23. row.
+          380 tried,    282 new,  30789 total nodes in   24. row.
+          376 tried,    274 new,  31063 total nodes in   25. row.
+          369 tried,    268 new,  31331 total nodes in   26. row.
+          351 tried,    258 new,  31589 total nodes in   27. row.
+          343 tried,    250 new,  31839 total nodes in   28. row.
+          340 tried,    244 new,  32083 total nodes in   29. row.
+          320 tried,    226 new,  32309 total nodes in   30. row.
+          307 tried,    219 new,  32528 total nodes in   31. row.
+          297 tried,    216 new,  32744 total nodes in   32. row.
+          295 tried,    212 new,  32956 total nodes in   33. row.
+          288 tried,    207 new,  33163 total nodes in   34. row.
+          292 tried,    208 new,  33371 total nodes in   35. row.
+          285 tried,    201 new,  33572 total nodes in   36. row.
+          274 tried,    199 new,  33771 total nodes in   37. row.
+          272 tried,    191 new,  33962 total nodes in   38. row.
+          259 tried,    190 new,  34152 total nodes in   39. row.
+          253 tried,    186 new,  34338 total nodes in   40. row.
+          250 tried,    185 new,  34523 total nodes in   41. row.
+          250 tried,    184 new,  34707 total nodes in   42. row.
+          243 tried,    181 new,  34888 total nodes in   43. row.
+          241 tried,    177 new,  35065 total nodes in   44. row.
+          237 tried,    174 new,  35239 total nodes in   45. row.
+          234 tried,    174 new,  35413 total nodes in   46. row.
+          228 tried,    172 new,  35585 total nodes in   47. row.
+          227 tried,    173 new,  35758 total nodes in   48. row.
+          225 tried,    168 new,  35926 total nodes in   49. row.
+          219 tried,    163 new,  36089 total nodes in   50. row.
+          219 tried,    163 new,  36252 total nodes in   51. row.
+          216 tried,    163 new,  36415 total nodes in   52. row.
+          212 tried,    157 new,  36572 total nodes in   53. row.
+          210 tried,    158 new,  36730 total nodes in   54. row.
+          209 tried,    154 new,  36884 total nodes in   55. row.
+          213 tried,    152 new,  37036 total nodes in   56. row.
+          209 tried,    152 new,  37188 total nodes in   57. row.
+          209 tried,    150 new,  37338 total nodes in   58. row.
+          211 tried,    149 new,  37487 total nodes in   59. row.
+          204 tried,    145 new,  37632 total nodes in   60. row.
+          208 tried,    144 new,  37776 total nodes in   61. row.
+          205 tried,    145 new,  37921 total nodes in   62. row.
+          202 tried,    140 new,  38061 total nodes in   63. row.
+          207 tried,    138 new,  38199 total nodes in   64. row.
+          205 tried,    145 new,  38344 total nodes in   65. row.
+          207 tried,    140 new,  38484 total nodes in   66. row.
+          198 tried,    133 new,  38617 total nodes in   67. row.
+          192 tried,    138 new,  38755 total nodes in   68. row.
+          200 tried,    137 new,  38892 total nodes in   69. row.
+          200 tried,    132 new,  39024 total nodes in   70. row.
+          189 tried,    131 new,  39155 total nodes in   71. row.
+          180 tried,    128 new,  39283 total nodes in   72. row.
+          173 tried,    116 new,  39399 total nodes in   73. row.
+          164 tried,    113 new,  39512 total nodes in   74. row.
+          157 tried,    111 new,  39623 total nodes in   75. row.
+          155 tried,    110 new,  39733 total nodes in   76. row.
+          154 tried,    103 new,  39836 total nodes in   77. row.
+          139 tried,    103 new,  39939 total nodes in   78. row.
+          140 tried,     96 new,  40035 total nodes in   79. row.
+          135 tried,     98 new,  40133 total nodes in   80. row.
+          131 tried,     94 new,  40227 total nodes in   81. row.
+          124 tried,     88 new,  40315 total nodes in   82. row.
+          122 tried,     87 new,  40402 total nodes in   83. row.
+          121 tried,     86 new,  40488 total nodes in   84. row.
+          125 tried,     85 new,  40573 total nodes in   85. row.
+          122 tried,     81 new,  40654 total nodes in   86. row.
+          115 tried,     80 new,  40734 total nodes in   87. row.
+          110 tried,     74 new,  40808 total nodes in   88. row.
+          111 tried,     74 new,  40882 total nodes in   89. row.
+          103 tried,     73 new,  40955 total nodes in   90. row.
+          105 tried,     69 new,  41024 total nodes in   91. row.
+          105 tried,     68 new,  41092 total nodes in   92. row.
+          102 tried,     70 new,  41162 total nodes in   93. row.
+          100 tried,     66 new,  41228 total nodes in   94. row.
+          101 tried,     67 new,  41295 total nodes in   95. row.
+           95 tried,     64 new,  41359 total nodes in   96. row.
+           92 tried,     60 new,  41419 total nodes in   97. row.
+           91 tried,     61 new,  41480 total nodes in   98. row.
+           90 tried,     61 new,  41541 total nodes in   99. row.
+           91 tried,     63 new,  41604 total nodes in  100. row.
+           94 tried,     62 new,  41666 total nodes in  101. row.
+           91 tried,     65 new,  41731 total nodes in  102. row.
+           94 tried,     62 new,  41793 total nodes in  103. row.
+           94 tried,     65 new,  41858 total nodes in  104. row.
+          101 tried,     66 new,  41924 total nodes in  105. row.
+          100 tried,     65 new,  41989 total nodes in  106. row.
+          102 tried,     65 new,  42054 total nodes in  107. row.
+          100 tried,     68 new,  42122 total nodes in  108. row.
+          102 tried,     66 new,  42188 total nodes in  109. row.
+          105 tried,     66 new,  42254 total nodes in  110. row.
+          101 tried,     70 new,  42324 total nodes in  111. row.
+          105 tried,     67 new,  42391 total nodes in  112. row.
+          110 tried,     67 new,  42458 total nodes in  113. row.
+          111 tried,     70 new,  42528 total nodes in  114. row.
+          113 tried,     69 new,  42597 total nodes in  115. row.
+          114 tried,     67 new,  42664 total nodes in  116. row.
+          110 tried,     70 new,  42734 total nodes in  117. row.
+          115 tried,     69 new,  42803 total nodes in  118. row.
+          108 tried,     68 new,  42871 total nodes in  119. row.
+          112 tried,     68 new,  42939 total nodes in  120. row.
+          115 tried,     71 new,  43010 total nodes in  121. row.
+          121 tried,     70 new,  43080 total nodes in  122. row.
+          117 tried,     72 new,  43152 total nodes in  123. row.
+          117 tried,     75 new,  43227 total nodes in  124. row.
+          118 tried,     74 new,  43301 total nodes in  125. row.
+          115 tried,     74 new,  43375 total nodes in  126. row.
+          115 tried,     74 new,  43449 total nodes in  127. row.
+          115 tried,     72 new,  43521 total nodes in  128. row.
+          118 tried,     75 new,  43596 total nodes in  129. row.
+          119 tried,     76 new,  43672 total nodes in  130. row.
+          119 tried,     75 new,  43747 total nodes in  131. row.
+          119 tried,     76 new,  43823 total nodes in  132. row.
+          123 tried,     75 new,  43898 total nodes in  133. row.
+          121 tried,     73 new,  43971 total nodes in  134. row.
+          120 tried,     76 new,  44047 total nodes in  135. row.
+          128 tried,     75 new,  44122 total nodes in  136. row.
+          123 tried,     79 new,  44201 total nodes in  137. row.
+          125 tried,     80 new,  44281 total nodes in  138. row.
+          130 tried,     82 new,  44363 total nodes in  139. row.
+          132 tried,     82 new,  44445 total nodes in  140. row.
+          130 tried,     79 new,  44524 total nodes in  141. row.
+          130 tried,     80 new,  44604 total nodes in  142. row.
+          134 tried,     80 new,  44684 total nodes in  143. row.
+          129 tried,     82 new,  44766 total nodes in  144. row.
+          127 tried,     81 new,  44847 total nodes in  145. row.
+          135 tried,     81 new,  44928 total nodes in  146. row.
+          133 tried,     81 new,  45009 total nodes in  147. row.
+          121 tried,     74 new,  45083 total nodes in  148. row.
+          121 tried,     75 new,  45158 total nodes in  149. row.
+          126 tried,     77 new,  45235 total nodes in  150. row.
+          127 tried,     76 new,  45311 total nodes in  151. row.
+          124 tried,     70 new,  45381 total nodes in  152. row.
+          125 tried,     71 new,  45452 total nodes in  153. row.
+          115 tried,     68 new,  45520 total nodes in  154. row.
+          111 tried,     67 new,  45587 total nodes in  155. row.
+          113 tried,     68 new,  45655 total nodes in  156. row.
+          110 tried,     68 new,  45723 total nodes in  157. row.
+          112 tried,     64 new,  45787 total nodes in  158. row.
+          106 tried,     63 new,  45850 total nodes in  159. row.
+          106 tried,     64 new,  45914 total nodes in  160. row.
+          103 tried,     60 new,  45974 total nodes in  161. row.
+           98 tried,     60 new,  46034 total nodes in  162. row.
+          100 tried,     60 new,  46094 total nodes in  163. row.
+           97 tried,     59 new,  46153 total nodes in  164. row.
+           94 tried,     54 new,  46207 total nodes in  165. row.
+           87 tried,     53 new,  46260 total nodes in  166. row.
+           84 tried,     53 new,  46313 total nodes in  167. row.
+           83 tried,     50 new,  46363 total nodes in  168. row.
+           78 tried,     48 new,  46411 total nodes in  169. row.
+           83 tried,     49 new,  46460 total nodes in  170. row.
+           77 tried,     44 new,  46504 total nodes in  171. row.
+           74 tried,     42 new,  46546 total nodes in  172. row.
+           73 tried,     44 new,  46590 total nodes in  173. row.
+           69 tried,     40 new,  46630 total nodes in  174. row.
+           63 tried,     34 new,  46664 total nodes in  175. row.
+           56 tried,     32 new,  46696 total nodes in  176. row.
+           56 tried,     32 new,  46728 total nodes in  177. row.
+           56 tried,     34 new,  46762 total nodes in  178. row.
+           54 tried,     34 new,  46796 total nodes in  179. row.
+           55 tried,     32 new,  46828 total nodes in  180. row.
+           57 tried,     32 new,  46860 total nodes in  181. row.
+           53 tried,     33 new,  46893 total nodes in  182. row.
+           57 tried,     33 new,  46926 total nodes in  183. row.
+           53 tried,     31 new,  46957 total nodes in  184. row.
+           51 tried,     32 new,  46989 total nodes in  185. row.
+           50 tried,     30 new,  47019 total nodes in  186. row.
+           54 tried,     34 new,  47053 total nodes in  187. row.
+           54 tried,     35 new,  47088 total nodes in  188. row.
+           56 tried,     34 new,  47122 total nodes in  189. row.
+           58 tried,     34 new,  47156 total nodes in  190. row.
+           59 tried,     38 new,  47194 total nodes in  191. row.
+           60 tried,     39 new,  47233 total nodes in  192. row.
+           60 tried,     38 new,  47271 total nodes in  193. row.
+           59 tried,     38 new,  47309 total nodes in  194. row.
+           61 tried,     40 new,  47349 total nodes in  195. row.
+           64 tried,     40 new,  47389 total nodes in  196. row.
+           63 tried,     41 new,  47430 total nodes in  197. row.
+           60 tried,     41 new,  47471 total nodes in  198. row.
+           62 tried,     42 new,  47513 total nodes in  199. row.
+           64 tried,     45 new,  47558 total nodes in  200. row.
+           63 tried,     47 new,  47605 total nodes in  201. row.
+           64 tried,     49 new,  47654 total nodes in  202. row.
+           65 tried,     49 new,  47703 total nodes in  203. row.
+           66 tried,     49 new,  47752 total nodes in  204. row.
+           66 tried,     49 new,  47801 total nodes in  205. row.
+           69 tried,     50 new,  47851 total nodes in  206. row.
+           67 tried,     49 new,  47900 total nodes in  207. row.
+           69 tried,     51 new,  47951 total nodes in  208. row.
+           67 tried,     50 new,  48001 total nodes in  209. row.
+           66 tried,     48 new,  48049 total nodes in  210. row.
+           69 tried,     50 new,  48099 total nodes in  211. row.
+           70 tried,     51 new,  48150 total nodes in  212. row.
+           75 tried,     51 new,  48201 total nodes in  213. row.
+           76 tried,     48 new,  48249 total nodes in  214. row.
+           74 tried,     52 new,  48301 total nodes in  215. row.
+           72 tried,     50 new,  48351 total nodes in  216. row.
+           77 tried,     51 new,  48402 total nodes in  217. row.
+           72 tried,     51 new,  48453 total nodes in  218. row.
+           77 tried,     53 new,  48506 total nodes in  219. row.
+           77 tried,     49 new,  48555 total nodes in  220. row.
+           77 tried,     57 new,  48612 total nodes in  221. row.
+           79 tried,     54 new,  48666 total nodes in  222. row.
+           80 tried,     53 new,  48719 total nodes in  223. row.
+           78 tried,     52 new,  48771 total nodes in  224. row.
+           76 tried,     48 new,  48819 total nodes in  225. row.
+           71 tried,     44 new,  48863 total nodes in  226. row.
+           60 tried,     39 new,  48902 total nodes in  227. row.
+           58 tried,     39 new,  48941 total nodes in  228. row.
+           61 tried,     36 new,  48977 total nodes in  229. row.
+           53 tried,     32 new,  49009 total nodes in  230. row.
+           48 tried,     30 new,  49039 total nodes in  231. row.
+           44 tried,     28 new,  49067 total nodes in  232. row.
+           45 tried,     28 new,  49095 total nodes in  233. row.
+           44 tried,     29 new,  49124 total nodes in  234. row.
+           45 tried,     27 new,  49151 total nodes in  235. row.
+           39 tried,     27 new,  49178 total nodes in  236. row.
+           40 tried,     26 new,  49204 total nodes in  237. row.
+           38 tried,     26 new,  49230 total nodes in  238. row.
+           38 tried,     24 new,  49254 total nodes in  239. row.
+           33 tried,     24 new,  49278 total nodes in  240. row.
+           32 tried,     23 new,  49301 total nodes in  241. row.
+           32 tried,     23 new,  49324 total nodes in  242. row.
+           28 tried,     21 new,  49345 total nodes in  243. row.
+           26 tried,     18 new,  49363 total nodes in  244. row.
+           22 tried,     15 new,  49378 total nodes in  245. row.
+           19 tried,     14 new,  49392 total nodes in  246. row.
+           20 tried,     13 new,  49405 total nodes in  247. row.
+           16 tried,     11 new,  49416 total nodes in  248. row.
+            9 tried,      5 new,  49421 total nodes in  249. row.
+            9 tried,      4 new,  49425 total nodes in  250. row.
+            4 tried,      1 new,  49426 total nodes in  251. row.
+
+    Grid size:
+       Number of specified boundary nodes:     1556
+       Number of background boundary nodes:     368
+       Number of constructed stretched nodes: 18150
+       Number of constructed isotropic nodes: 29348
+       Total number of nodes in the grid:     49054
+       Number of cells:                       96814
+
+    Resources used:
+           0.0 sec to read the input,
+           0.0 sec to triangulate,
+           0.0 sec to preserve  boundaries,
+           0.0 sec to modify the background grid,
+           0.0 sec to construct stretched points,
+           0.2 sec to construct isotropic points,
+           0.5 sec to write the output, thus
+           0.8 sec in total.
+
+

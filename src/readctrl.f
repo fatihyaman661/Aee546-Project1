@@ -622,7 +622,7 @@ C         Read the output file format.
           CharOpt(10) = 'U'
           CharOpt(11) = 'S'
           CharOpt(12) = 'P'
-          MCharTxt = 5
+          MCharTxt = 6
           CharTxt(1) = '       Output format: .dpl (dplot) [d],'
           CharTxt(2) = '                      .gri (vkb)   [g],'
           CharTxt(3) = '                      .out (vkb)   [o],'

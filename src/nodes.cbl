@@ -10,7 +10,7 @@ C
 C23456789 123456789 123456789 123456789 123456789 123456789 123456789 12
 C        1         2         3         4         5         6         7
 C
-      PARAMETER (MaxNode=50000,MaxBound=25,MaxBndNde=MaxNode/10,
+      PARAMETER (MaxNode=500000,MaxBound=25,MaxBndNde=MaxNode/10,
      &           MaxVisBound = 10*MaxBound,MaxLsFlg=2*MaxBndNde)
 
       PARAMETER (MStck=100,MaxFrontEl=MaxBndNde,RadTolRel=1.D-11)
